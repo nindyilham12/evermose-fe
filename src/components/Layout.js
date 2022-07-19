@@ -21,9 +21,9 @@ const Layout = ({ children, title }) => {
             <div>
                 <header>
                     <nav className={styles.navbar}>
-                        <a href="/">
-                            <img alt="brand-logo" src="/featured/logo.png" className={styles.brandLogo}/>
-                        </a>
+                        <Link href="/">
+                            <img alt="brand-logo" src="/featured/logo.png"/>
+                        </Link>
                         <div className={styles.containerMenu}>
                             <Link href="/cart">
                                 <p className={styles.menu}>
