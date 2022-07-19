@@ -1,0 +1,162 @@
+.containerDP {
+    display: grid;
+    background-color: $white;
+    padding: 0;
+    grid-template-columns: repeat(1, 1fr);
+
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+    @media (min-width: 1280px) {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 80px;
+    }
+
+    .slider {
+        min-width: 0;
+        min-height: 0;
+        .imgDP {
+            width: 100%;
+            cursor: pointer;
+            object-position: center;
+            padding: 20px;
+            border-radius: 20px 20px 0 0;
+            box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+            @media (min-width: 1024px) {
+                border-radius: 20px 0 0 0;
+                padding: 0;
+            }
+        }
+        .containerPV {
+            text-align: center;
+            background-color: $blackPrimary;
+            @media (min-width: 1024px) {
+                border-radius: 0 0 0 20px;
+                padding: 0;
+            }
+
+            .carouselDP {
+                width: 100%;  
+                padding: 0 40px;
+
+                .sliderImg {
+                    padding: 10px;
+                    @media (min-width: 1024px) {
+                        padding: 20px;
+                    }
+                }
+                .carouselDPImg {
+                    object-position: center;
+                    object-fit: cover;
+                    width: 100%;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    
+    
+    .mainContainer {
+        border-radius: 0 0 20px 20px;
+        background-color: $whiteSecondary;
+        color: $blackPrimary;
+        @media (min-width: 1024px) {
+            border-radius: 0 20px 20px 0;
+        }
+    
+        .containerText {
+            margin: 37px;
+    
+            @media (min-width: 1024px) {
+                margin: 26px 86px 76px 65px;
+            }
+    
+            h1 {
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 45px;
+            }
+    
+            p {
+                margin-top: 24px;
+                font-size: 17px;
+                line-height: 23px;
+            }
+    
+            .containerPrice {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-content: space-between;
+                margin-top: 24px;
+                padding: 16px;
+                grid-gap: 12px;
+                border: 1px solid $grayPrimary;
+                border-radius: 12px;
+    
+                @media (min-width: 1024px) {
+                    grid-gap: 6px;
+                }
+    
+                .wrapperPrice {
+                    font-weight: 600;
+    
+                    h3 {
+                        line-height: 39px;
+                        font-size: 26px;
+                        margin: 0;
+                    }
+    
+                    p {
+                        font-size: 12px;
+                        line-height: 18px;
+                        text-decoration: line-through;
+                        color: $grayPrimary;
+                        margin: 0;
+                    }
+                }
+    
+                .containerBtnAdd {
+                    margin: auto 0;
+                    width: max-content;
+                    background-color: $brownPrimary;
+                    border-radius: 10px;
+                    border: $black;
+                    border-color: $blackTertiary;
+                    color: $white;
+                    padding: 10px;
+                    cursor: pointer;
+    
+                    .i {
+                        font-size: 4px
+                    }
+    
+                    span {
+                        font-weight: 700;
+                        font-size: 15px;
+                        line-height: 22px;
+                        margin-left: 4px;
+                    }
+                }
+            }
+
+            .containerDesc {
+                margin-top: 36px;
+                h2 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 21px;
+                }
+
+                p{
+                    margin-top: 22px;
+                    font-size: 14px;
+                    line-height: 19px;
+                }
+            }
+        }
+    }
+}
+   
