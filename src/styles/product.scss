@@ -6,10 +6,17 @@
   @media (min-width: 1024px) {
     padding: 12px 90px;
   }
+  .brandLogo {
+    width: 100%;
+  }
   .containerMenu {
     color: $white;
     display: flex;
     align-items: center;
+    .avatar {
+      width: 30px;
+      height: 30px;
+    }
     .menu{
       margin-right: 20px;
       font-size: 20px;
@@ -160,6 +167,7 @@
   align-items: center;
   background-color: $blackTertiary;
   display: flex;
+  font-size: 20px;
 }
 
 .logo {

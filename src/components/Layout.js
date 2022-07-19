@@ -1,6 +1,5 @@
 import React from "react";
 import Head from 'next/head';
-import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import styles from '../styles/index.module.scss';
@@ -23,7 +22,7 @@ const Layout = ({ children, title }) => {
                 <header>
                     <nav className={styles.navbar}>
                         <a href="/">
-                            <Image alt="brand-logo" src="/featured/logo.png" width={150} height={45} />
+                            <img alt="brand-logo" src="/featured/logo.png" className={styles.brandLogo}/>
                         </a>
                         <div className={styles.containerMenu}>
                             <Link href="/cart">
@@ -36,9 +35,7 @@ const Layout = ({ children, title }) => {
                                     )}
                                 </p>
                             </Link>
-                            <a href="#">
-                                <Image alt="avatar-logo" src="/featured/default-avatar.png" width={30} height={30} />
-                            </a>
+                            <img alt="avatar-logo" src="/featured/default-avatar.png" className={styles.avatar}/>
                         </div>
                     </nav>
                 </header>
