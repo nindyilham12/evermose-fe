@@ -23,7 +23,7 @@ const Layout = ({ children, title }) => {
                 <header>
                     <nav className={styles.navbar}>
                         <a href="/">
-                            <Image alt="brand-logo" src="/featured/logo.png" width={150} height={45}/>
+                            <Image alt="brand-logo" src="/featured/logo.png" width={150} height={45} />
                         </a>
                         <div className={styles.containerMenu}>
                             <Link href="/cart">
@@ -37,7 +37,7 @@ const Layout = ({ children, title }) => {
                                 </p>
                             </Link>
                             <a href="#">
-                                <Image alt="avatar-logo" src="/featured/default-avatar.png" width={30} height={30}/>
+                                <Image alt="avatar-logo" src="/featured/default-avatar.png" width={30} height={30} />
                             </a>
                         </div>
                     </nav>
@@ -46,15 +46,13 @@ const Layout = ({ children, title }) => {
                     {children}
                 </main>
                 <footer className={styles.footer}>
-                    <a>
-                        Follow us on{' '}
-                        <span className={styles.logo}>
-                            <BsInstagram />&emsp;
-                            <BsYoutube />&emsp;
-                            <BsTwitter />&emsp;
-                            <BsFacebook />
-                        </span>
-                    </a>
+                    Follow us on{' '}
+                    <span className={styles.logo}>
+                        <BsInstagram />&emsp;
+                        <BsYoutube />&emsp;
+                        <BsTwitter />&emsp;
+                        <BsFacebook />
+                    </span>
                 </footer>
             </div>
         </>
